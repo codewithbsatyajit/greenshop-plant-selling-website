@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--tab icon-->
+	<link rel="icon" href="./Work/public/logo-icon.jpg" type="image/png">
+	<title>Green Shop | @bsatyajit_</title>
+	<!--CSS link-->
+	<link rel="stylesheet" href="./Work/css/checkout.css">
+	<!--icon link-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+	<!--font style link-->
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" />
+</head>
+
+<body>
+	<header class="header">
+		<div class="logo">
+			<i class="fa-brands fa-envira" style="color: #27ae60;font-size:25px;"></i>
+			<span><a href="./index.html">GREENSHOP</a></span>
+		</div>
+		<nav class="nav">
+			<a href="./index.html">Home</a>
+			<a href="./shop.html" class="active">Shop</a>
+			<a href="#">Plant Care</a>
+			<a href="#">Blogs</a>
+		</nav>
+		<div class="nav-icons">
+			<i class="fa-brands fa-searchengin"></i>
+			<div class="cart">
+				<a href="./cart.html">
+					<i class="fa-brands fa-opencart"></i>
+					<span class="badge">0</span>
+				</a>
+			</div>
+			<button class="login-btn">Login</button>
+		</div>
+	</header>
+	<div class="container">
+		<h2>Billing Address</h2>
+		<div class="row">
+			<div class="column">
+				<label for="first-name">First Name <span class="required">*</span></label>
+				<input type="text" id="first-name" name="first-name">
+			</div>
+			<div class="column">
+				<label for="last-name">Last Name <span class="required">*</span></label>
+				<input type="text" id="last-name" name="last-name">
+			</div>
+		</div>
+		<div class="row">
+			<div class="column">
+				<label for="country">Country / Region <span class="required">*</span></label>
+				<select id="country" name="country">
+					<option value="">Select a country / region</option>
+					<option value="Afghanistan">Afghanistan</option>
+					<option value="Armenia">Armenia</option>
+					<option value="Azerbaijan">Azerbaijan</option>
+					<option value="Bahrain">Bahrain</option>
+					<option value="Bangladesh">Bangladesh</option>
+					<option value="Bhutan">Bhutan</option>
+					<option value="Brunei">Brunei</option>
+					<option value="Cambodia">Cambodia</option>
+					<option value="China">China</option>
+					<option value="Cyprus">Cyprus</option>
+					<option value="Georgia">Georgia</option>
+					<option value="India">India</option>
+					<option value="Indonesia">Indonesia</option>
+					<option value="Iran">Iran</option>
+					<option value="Iraq">Iraq</option>
+					<option value="Israel">Israel</option>
+					<option value="Japan">Japan</option>
+					<option value="Jordan">Jordan</option>
+					<option value="Kazakhstan">Kazakhstan</option>
+					<option value="Kuwait">Kuwait</option>
+					<option value="Kyrgyzstan">Kyrgyzstan</option>
+					<option value="Laos">Laos</option>
+					<option value="Lebanon">Lebanon</option>
+					<option value="Malaysia">Malaysia</option>
+					<option value="Maldives">Maldives</option>
+					<option value="Mongolia">Mongolia</option>
+					<option value="Myanmar (Burma)">Myanmar (Burma)</option>
+					<option value="Nepal">Nepal</option>
+					<option value="North Korea">North Korea</option>
+					<option value="Oman">Oman</option>
+					<option value="Pakistan">Pakistan</option>
+					<option value="Palestine">Palestine</option>
+					<option value="Philippines">Philippines</option>
+					<option value="Qatar">Qatar</option>
+					<option value="Saudi Arabia">Saudi Arabia</option>
+					<option value="Singapore">Singapore</option>
+					<option value="South Korea">South Korea</option>
+					<option value="Sri Lanka">Sri Lanka</option>
+					<option value="Syria">Syria</option>
+					<option value="Taiwan">Taiwan</option>
+					<option value="Tajikistan">Tajikistan</option>
+					<option value="Thailand">Thailand</option>
+					<option value="Timor-Leste">Timor-Leste</option>
+					<option value="Turkey">Turkey</option>
+					<option value="Turkmenistan">Turkmenistan</option>
+					<option value="United Arab Emirates">United Arab Emirates</option>
+					<option value="Uzbekistan">Uzbekistan</option>
+					<option value="Vietnam">Vietnam</option>
+					<option value="Yemen">Yemen</option>
+				</select>
+
+			</div>
+			<div class="column">
+				<label for="city">Town / City <span class="required">*</span></label>
+				<input type="text" id="city" name="city">
+			</div>
+		</div>
+		<label for="street-address">Street Address <span class="required">*</span></label>
+		<input type="text" id="street-address" name="street-address" placeholder="House number and street name">
+		<input type="text" id="apartment" name="apartment" placeholder="Appartment, suite, unit, etc. (optional)">
+		<div class="row">
+			<div class="column">
+				<label for="state">State <span class="required">*</span></label>
+				<select id="state" name="state">
+					<option value="">Select a state</option>
+					<option value="Andhra Pradesh">Andhra Pradesh</option>
+					<option value="Arunachal Pradesh">Arunachal Pradesh</option>
+					<option value="Assam">Assam</option>
+					<option value="Bihar">Bihar</option>
+					<option value="Chhattisgarh">Chhattisgarh</option>
+					<option value="Goa">Goa</option>
+					<option value="Gujarat">Gujarat</option>
+					<option value="Haryana">Haryana</option>
+					<option value="Himachal Pradesh">Himachal Pradesh</option>
+					<option value="Jharkhand">Jharkhand</option>
+					<option value="Karnataka">Karnataka</option>
+					<option value="Kerala">Kerala</option>
+					<option value="Madhya Pradesh">Madhya Pradesh</option>
+					<option value="Maharashtra">Maharashtra</option>
+					<option value="Manipur">Manipur</option>
+					<option value="Meghalaya">Meghalaya</option>
+					<option value="Mizoram">Mizoram</option>
+					<option value="Nagaland">Nagaland</option>
+					<option value="Odisha">Odisha</option>
+					<option value="Punjab">Punjab</option>
+					<option value="Rajasthan">Rajasthan</option>
+					<option value="Sikkim">Sikkim</option>
+					<option value="Tamil Nadu">Tamil Nadu</option>
+					<option value="Telangana">Telangana</option>
+					<option value="Tripura">Tripura</option>
+					<option value="Uttar Pradesh">Uttar Pradesh</option>
+					<option value="Uttarakhand">Uttarakhand</option>
+					<option value="West Bengal">West Bengal</option>
+					<option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+					<option value="Chandigarh">Chandigarh</option>
+					<option value="Dadra and Nagar Haveli and Daman and Diu">Dadra and Nagar Haveli and Daman and Diu
+					</option>
+					<option value="Lakshadweep">Lakshadweep</option>
+					<option value="Delhi">Delhi</option>
+					<option value="Puducherry">Puducherry</option>
+					<option value="Ladakh">Ladakh</option>
+					<option value="Jammu and Kashmir">Jammu and Kashmir</option>
+				</select>
+			</div>
+
+			<div class="column">
+				<label for="zip">Zip <span class="required">*</span></label>
+				<input type="text" id="zip" name="zip">
+			</div>
+		</div>
+		<div class="row">
+			<div class="column">
+				<label for="email">Email address <span class="required">*</span></label>
+				<input type="email" id="email" name="email">
+			</div>
+			<div class="column">
+				<label for="phone">Phone Number <span class="required">*</span></label>
+				<input type="text" id="phone" name="phone" placeholder="+91">
+			</div>
+		</div>
+		<div class="checkbox-container">
+			<input type="checkbox" id="different-address" name="different-address">
+			<label for="different-address">Ship to a different address?</label>
+		</div>
+		<div class="label">
+			<label class="label" for="order-notes">Order notes (optional)</label>
+			<textarea id="order-notes" class="textarea"></textarea>
+		</div>
+		<div class="order">
+			<h1>Your Order</h1>
+			<div class="row">
+				<div class="column">
+					<table class="order-summary">
+						<thead>
+							<tr>
+								<th>Products</th>
+								<th>Subtotal</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="product">
+									<img src="./Work/public/image.png" alt="">
+									<div class="product-details">
+										<p class="name">Barberton Daisy</p>
+										<p class="sku">SKU: 1995751877966</p>
+										<p>(x 2)</p>
+									</div>
+								</td>
+								<td class="subtotal">$238.00</td>
+							</tr>
+							<tr>
+								<td class="product">
+									<img src="./Work/public/image4.png" alt="">
+									<div class="product-details">
+										<p class="name">Blushing Bromeliad</p>
+										<p class="sku">SKU: 19957518757065</p>
+										<p>(x 6)</p>
+									</div>
+								</td>
+								<td class="subtotal">$834.00</td>
+							</tr>
+							<tr>
+								<td class="product">
+									<img src="./Work/public/image5.png" alt="">
+									<div class="product-details">
+										<p class="name">Aluminum Plant</p>
+										<p class="sku">SKU: 1995751877786</p>
+										<p>(x 9)</p>
+									</div>
+								</td>
+								<td class="subtotal">$1,611.00</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>l̥l̥
+			<div class="row">
+				<div class="column">
+					<div class="coupon">
+						<p>Have a coupon code? <a href="#">Click here</a></p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="column">
+					<table class="order-summary">
+						<tbody>
+							<tr>
+								<td>Subtotal</td>
+								<td class="subtotal">$2,683.00</td>
+							</tr>
+							<tr>
+								<td>Coupon Discount</td>
+								<td class="subtotal">(-) 00.00</td>
+							</tr>
+							<tr>
+								<td>Shipping</td>
+								<td class="subtotal">$16.00</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td><a href="#" style="color: #28a745; text-decoration: none;">View shipping charge</a>
+								</td>
+							</tr>
+							<tr>
+								<td>Total</td>
+								<td class="total">$2,699.00</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="payment-method">
+				<h2>
+					Payment Method
+				</h2>
+				<div class="payment-option">
+					<input id="paypal" name="payment" type="radio" />
+					<label for="paypal">
+						<img src="./Work/public/pay.png" alt="">
+					</label>
+				</div>
+				<div class="payment-option">
+					<input id="bank-transfer" name="payment" type="radio" />
+					<label for="bank-transfer">
+						Dorect bank transfer
+					</label>
+				</div>
+				<div class="payment-option">
+					<input checked="" id="cash-on-delivery" name="payment" type="radio" />
+					<label for="cash-on-delivery">
+						Cash on delivery
+					</label>
+				</div>
+				<button class="place-order">Place Order</button>
+			</div>
+		</div>
+	</div>
+	<div class="body">
+		<div class="greet">
+			<div class="thank-you-icon">
+				<i class="fa-solid fa-envelope-open-text fa-bounce"></i>
+				</i>
+			</div>
+			<div class="thank-you-text">
+				Your order has been received
+			</div>
+			<div class="order-info">
+				<div>
+					<div>
+						Order Number
+					</div>
+					<div>
+						19586687
+					</div>
+				</div>
+				<div>
+					<div>
+						Date
+					</div>
+					<div>
+						15 Sep, 2021
+					</div>
+				</div>
+				<div>
+					<div>
+						Total
+					</div>
+					<div>
+						2,699.00
+					</div>
+				</div>
+				<div>
+					<div>
+						Payment Method
+					</div>
+					<div>
+						Cash on delivery
+					</div>
+				</div>
+			</div>
+			<div class="order-details">
+				<table>
+					<thead>
+						<tr>
+							<th>
+								Products
+							</th>
+							<th>
+								Qty
+							</th>
+							<th>
+								Subtotal
+							</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="product-info">
+								<img src="./Work/public/image.png" alt="">
+								<div>
+									<div>
+										Barberton Daisy
+									</div>
+									<div>
+										SKU: 1995751877966
+									</div>
+								</div>
+							</td>
+							<td>
+								(x 2)
+							</td>
+							<td>
+								$238.00
+							</td>
+						</tr>
+						<tr>
+							<td class="product-info">
+								<img src="./Work/public/image4.png" alt="">
+								<div>
+									<div>
+										Blushing Bromeliad
+									</div>
+									<div>
+										SKU: 1995751875065
+									</div>
+								</div>
+							</td>
+							<td>
+								(x 6)
+							</td>
+							<td>
+								$834.00
+							</td>
+						</tr>
+						<tr>
+							<td class="product-info">
+								<img src="./Work/public/image5.png" alt="">
+								<div>
+									<div>
+										Aluminum Plant
+									</div>
+									<div>
+										SKU: 1995751877786
+									</div>
+								</div>
+							</td>
+							<td>
+								(x 9)
+							</td>
+							<td>
+								$1,611.00
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Shipping
+							</td>
+							<td>
+							</td>
+							<td>
+								$16.00
+							</td>
+						</tr>
+						<tr class="total">
+							<td>
+								Total
+							</td>
+							<td>
+							</td>
+							<td>
+								$2,699.00
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="order-message">
+				Your order is currently being processed. You will receive an order confirmation email shortly with the
+				expected
+				delivery date for your items.
+			</div>
+			<a class="track-order-button" href="#">
+				Track your order
+			</a>
+		</div>
+	</div>
+	<div class="bottom">
+		<div class="service">
+			<img src="./Work/public/footer2.jpg" />
+			<h3>
+				Garden Care
+			</h3>
+			<p>
+				We are an online plant shop offering a wide range of cheap and trendy plants.
+			</p>
+		</div>
+		<div class="service">
+			<img src="./Work/public/footer1.jpg" />
+			<h3>
+				Plant Renovation
+			</h3>
+			<p>
+				We are an online plant shop offering a wide range of cheap and trendy plants.
+			</p>
+		</div>
+		<div class="service">
+			<img src="./Work/public/footer3.jpg" />
+			<h3>
+				Watering Graden
+			</h3>
+			<p>
+				We are an online plant shop offering a wide range of cheap and trendy plants.
+			</p>
+		</div>
+		<div class="newsletter">
+			<h3>
+				Would you like to join newsletters?
+			</h3>
+			<form>
+				<input placeholder="enter your email address..." type="email" />
+				<button type="submit">
+					Join
+				</button>
+			</form>
+			<p>
+				We usually post offers and challenges in newsletter. We're your online houseplant destination. We offer
+				a
+				wide range of houseplants and accessories shipped directly from our (green)house to yours!
+			</p>
+		</div>
+	</div>
+	<footer class="footer">
+		<div class="footer-top">
+			<div class="content">
+				<div>
+					<i class="fa-brands fa-envira" style="color: #27ae60;font-size:30px;"></i>
+					<p>
+						GREENSHOP
+					</p>
+				</div>
+				<div>
+					<i class="fas fa-map-marker-alt">
+					</i>
+					<p>
+						70 West Buckingham Ave. Farmingdale, NY 11735
+					</p>
+				</div>
+				<div>
+					<i class="fas fa-envelope">
+					</i>
+					<p>
+						contact@greenshop.com
+					</p>
+				</div>
+				<div>
+					<i class="fas fa-phone">
+					</i>
+					<p>
+						+88 01911 717 490
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="footer-middle">
+			<div class="content">
+				<div>
+					<h4>
+						My Account
+					</h4>
+					<ul>
+						<li>
+							<a href="#">
+								My Account
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Our stores
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Contact us
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Career
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Specials
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div>
+					<h4>
+						Help &amp; Guide
+					</h4>
+					<ul>
+						<li>
+							<a href="#">
+								Help Center
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								How to Buy
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Shipping &amp; Delivery
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Product Policy
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								How to Return
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div>
+					<h4>Categories</h4>
+					<ul>
+						<li><a href="#">House Plants</a></li>
+						<li><a href="#">Potter Plants</a></li>
+						<li><a href="#">Seeds</a></li>
+						<li><a href="#">Small Plants</a></li>
+						<li><a href="#"></a>Accessories</a></li>
+					</ul>
+				</div>
+				<div>
+					<div class="social-media">
+						<h2>Social Media</h2>
+						<div class="social-icons">
+							<a href="#"><i class="fab fa-facebook-f"></i></a>
+							<a href="#"><i class="fab fa-instagram"></i></a>
+							<a href="#"><i class="fab fa-twitter"></i></a>
+							<a href="#"><i class="fab fa-linkedin-in"></i></a>
+							<a href="#"><i class="fab fa-youtube"></i></a>
+						</div>
+					</div>
+					<h4>
+						We accept
+					</h4>
+					<div class="pay-methods">
+						<img src="./Work/public/pay.png" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<p>
+				&copy; 2024 GreenShop. All Rights Reserved.
+			</p>
+		</div>
+	</footer>
+	<script src="./js/checkout.js"></script>
+</body>
+
+</html>
